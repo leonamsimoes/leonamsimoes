@@ -33,3 +33,15 @@ I believe collaboration is fundamental to success. I constantly seek to improve 
 * 🎮 - Play some games
 * ⚽ - Watch my team play Flamengo (🟥⬛)
 * 🧰 - Fix and create things
+
+
+
+###  More...
+
+* ☕ - If you liked any of my ideas or are benefiting from my repositories, what do you think about [buying me a coffee](https://buymeacoffee.com/leonamsimoes)?
+
+<img width="178" height="293" alt="image" src="https://github.com/user-attachments/assets/67286299-975f-4928-b78e-1f9ad72e9acf" />
+
+
+
+

@@ -1,4 +1,4 @@
-package main
+package profile
 
 import (
 	"fmt"
@@ -14,11 +14,12 @@ const (
 	profileDescription = "%s\nI'm a seasoned Software Engineer with over %d years of experience in the IT world, passionate about technology and creating efficient, scalable solutions.\n%s"
 )
 
-func updateReadme(file string) error {
-	experience := calculateExperience()
+// UpdateReadme reads the readme to update the time of experience
+func UpdateReadme(file string, startAt int) error {
+	experience := calculateExperience(startAt)
 
 	if experience <= 0 {
-		return fmt.Errorf("year calculation should not be 0 or less: %d years (career start: %d)", experience, careerITStartYear)
+		return fmt.Errorf("year calculation should not be 0 or less: %d years (career start: %d)", experience, startAt)
 	}
 
 	content, err := os.ReadFile(filepath.Clean(file))
@@ -48,12 +49,12 @@ func updateReadme(file string) error {
 		return fmt.Errorf("could not write the file %s: %v", file, err)
 	}
 
-	fmt.Printf("Successfully updated: %d years experience (since %d)\n", experience, careerITStartYear)
+	fmt.Printf("Successfully updated: %d years experience (since %d)\n", experience, startAt)
 
 	return nil
 }
 
-func calculateExperience() int {
+func calculateExperience(startAt int) int {
 	currentYear := time.Now().Year()
-	return currentYear - careerITStartYear
+	return currentYear - startAt
 }

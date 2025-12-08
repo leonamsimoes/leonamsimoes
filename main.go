@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"leonamsimoes/profile"
 	"log"
 	"os"
 )
@@ -21,7 +22,7 @@ func main() {
 		filePath = os.Args[1]
 	}
 
-	if err := updateReadme(filePath); err != nil {
+	if err := profile.UpdateReadme(filePath, careerITStartYear); err != nil {
 		log.Printf("could not update the readme: %v\n", err)
 		os.Exit(1)
 	}

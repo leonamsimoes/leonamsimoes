@@ -2,8 +2,9 @@
 
 ### 💻 Software Engineer | Cloud & Automation Enthusiast
 
-I'm a seasoned **Software Engineer** with over 15 years of experience in the IT world, passionate about technology and creating **efficient, scalable solutions**.
-
+<!-- XP_CALC_START -->
+I'm a seasoned Software Engineer with over 16 years of experience in the IT world, passionate about technology and creating efficient, scalable solutions.
+<!-- XP_CALC_END -->
 ---
 
 ### 🚀 Core Technologies & Expertise
@@ -30,7 +31,7 @@ I believe collaboration is fundamental to success. I constantly seek to improve 
 ###  Hobbies
 
 * 🎸 - Practice my guitar
-* 🎮 - Play some games
+* 🎮 - Play some games ('The Long Dark' fan)
 * ⚽ - Watch my team play Flamengo (🟥⬛)
 * 🧰 - Fix and create things
 
@@ -41,7 +42,3 @@ I believe collaboration is fundamental to success. I constantly seek to improve 
 * ☕ - If you liked any of my ideas or are benefiting from my repositories, what do you think about [buying me a coffee](https://buymeacoffee.com/leonamsimoes)?
 
 <img width="178" height="293" alt="image" src="https://github.com/user-attachments/assets/67286299-975f-4928-b78e-1f9ad72e9acf" />
-
-
-
-

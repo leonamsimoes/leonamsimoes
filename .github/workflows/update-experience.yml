@@ -1,0 +1,51 @@
+name: 🔄 Update XP
+
+on:
+    schedule:
+        - cron: "0 0 1 * *"
+    workflow_dispatch:
+    push:
+        branches: [main]
+
+permissions:
+    contents: write
+
+jobs:
+    update-experience:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - name: Set up Go
+              uses: actions/setup-go@v4
+              with:
+                  go-version: "1.25"
+
+            - name: Build Go script
+              run: |
+                  go build -o .github/bin/update_experience main.go
+
+            - name: Run experience updater
+              run: |
+                  .github/bin/update_experience
+
+            - name: Commit and push changes
+              id: commit
+              run: |
+                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git config --local user.name "github-actions[bot]"
+
+                  if git diff --quiet README.md; then
+                    echo "No changes to commit."
+                    echo "changes_made=false" >> $GITHUB_OUTPUT
+                  else
+                    git add README.md
+                    git commit -m "docs: update professional experience [skip ci]"
+                    git push
+                    echo "Changes committed and pushed."
+                    echo "changes_made=true" >> $GITHUB_OUTPUT
+                  fi

@@ -1,0 +1,8 @@
+# IDE 
+/.idea/
+/.vscode/
+
+
+# BINARIES
+bin/
+.github/bin

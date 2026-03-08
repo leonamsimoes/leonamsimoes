@@ -25,7 +25,8 @@ My experience spans the full development lifecycle, from deep-dive **QA Automati
 
 I believe collaboration is fundamental to success. I constantly seek to improve my skills and stay sharp with new topics in software engineering.
 
-* **Connect:** [www.linkedin.com/](www.linkedin.com/in/leonamsimoes)
+* **Connect:** [www.linkedin.com/leonamsimoes](www.linkedin.com/in/leonamsimoes)
+* **Contacts:** [lnk.bio/leonamsimoes](https://lnk.bio/leonamsimoes)
 * **Location:** Portugal 🇵🇹 🇧🇷 🏴󠁧󠁢󠁥󠁮󠁧󠁿
 
 ###  Hobbies
